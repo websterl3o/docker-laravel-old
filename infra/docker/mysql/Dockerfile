@@ -1,5 +1,5 @@
-FROM mysql/mysql-server:8.0
+FROM mysql:8.4
 
 ENV TZ=UTC
 
-COPY ./infra/docker/mysql/my.cnf /etc/my.cnf
+COPY ./infra/docker/mysql/*.cnf /etc/mysql/conf.d/
